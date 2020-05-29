@@ -25,3 +25,6 @@
 		版本号可以在git log中查找
 8.查看执行命令的历史记录
 	1.git reflog
+9.查看工作区和版本库里面最新版本的区别
+	1.git diff HEAD -- fileName
+10.丢弃未提交的文件(让这个文件回到最近一次git commit 或git add的状态)
