@@ -14,3 +14,12 @@
 	1.git status:
 5.查看某文件的具体修改内容：
 	1.git diff fileNamw
+6.查看Git仓库的操作历史记录：
+	1.git log
+	此命令显示从最近到最远的提交日志
+	若觉得输出的信息太多，可以试试加上--pretty=oneline
+7.版本回退
+	1.git reset --hard HEAD^  参数 --hard的作用后面再讲
+	2.如果想回退到指定版本则：
+		git reset --hard 版本号
+		版本号可以在git log中查找
