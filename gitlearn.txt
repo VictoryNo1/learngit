@@ -1,0 +1,16 @@
+1.配置Git的全局参数
+	git config --global user.name "Your Name"
+	git config --global user.email "Your Email"
+	
+2.将某个目录添加到Git可管理的仓库：
+	1.切换到该目录下 cd ...
+	2. git init
+3.把一个文件添加到Git的仓库：
+	1.切换到该仓库下。
+	2.git add file name
+	3.git commit -m "文件版本说明"
+	注：可以add多个文件，然后commit
+4.查看当前仓库状态：
+	1.git status:
+5.查看某文件的具体修改内容：
+	1.git diff fileNamw
