@@ -96,3 +96,13 @@
 	1.git tag v1.0 默认标签是打在最新提交的commit上的
 	2.git tag tag名称 commit的版本号
 	3.git tag -a tag名 -m "tag 描述" commit版本号
+30.查看某tag的信息：
+	1.git show tag名
+31.删除tag
+	1.git tag -d tag名
+32.推送某个标签到远程库
+	1.git push 远程库名称 tag名
+	2.git push 远程库名称 --tags   (一次性推送全部尚未推送到远程的本地标签)
+33.删除远程标签
+	1.git tag -d  tag名
+	2.git push 远程库名称 :refs/tags/标签名称
