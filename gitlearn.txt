@@ -31,3 +31,20 @@
 	1.git restore --staged fileName 
 11.丢弃工作区中的修改：
 	2.git restore fileName  放弃在工作区的修改。
+12. 当添加到暂存区的文件被删除掉之后，一般有两种选择：
+	1.是确实要从版本库中删掉该文件，用命令git rm 删掉并且git commit。
+	2.是删错了，可以用git restore fileName 恢复为最后一版文件
+13.退出git log 
+	在英文状态下按下Q
+14.创建本机的ssh密钥
+	1.ssh-keygen -t rsa -C "email@xxx.com"
+	git 会提示你密钥产生的位置
+	产生的id_rsa.pub 是公钥，id_rsa是私钥
+	在github中的SSH Keys中添加公钥文件里面的内容。
+	然后在github中创建远程仓库。
+15.将本地库与远程库关联起来:
+	1.在本地库中运行  git remote add origin(默认远程库的名字，也可以改成别的) git@github.com:github帐户名/在github上仓库的名字.git
+	2.git push -u origin(远程库的名字) master (将本地分支推送到远程库上，-u 参数指Git 不但会把本地的master 分支内容推送到远程新的master分支，还会把本地的master分支和远程master分支关联起来,以后的推送或者拉取时就可以简化命令)
+	3.git push origin master （把本地master分支的最新修改推送到github上）
+16.克隆远程库
+	1.git clone git@github.com:GitHub账户名/Github上远程库的名字.git （https://github.com/GitHub账户名/Github上远程库的名字.git）https速度慢，每次推送都要输入口令
