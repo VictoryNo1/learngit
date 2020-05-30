@@ -69,3 +69,14 @@
 	Fast forward:删除分支后，会丢掉分支信息。如果要强制禁用Fast forward模式，Git就会在merge时生成一个新的commit，这样，从分支历史上就可以看出分支信息。
 	合并分支时不用 Fast forward 模式。
 	git merge --no-ff -m "版本描述" 要合并的分支名
+25.修改A分支时，去修改B分支，修改完B分支后把B分支提交，然后在master上合并B分支上的工作，然后回到A分支，并把B分支的修改，转移到A分支上：
+	1.首先在A分支上保存文件并用 git add fileName 将修改的文件保存到暂存区。
+	2.用git stash 隐藏当前工作区。
+	3.切换到B分支修改并提交,并记下提交的哈希值。
+	4.到master上merge B文件的提交。
+	5.删除B分支（也可以不删除）
+	6.回到A分支，并用git cherry-pick 刚刚提交产生的哈希值。
+	7.用git stash list 查看stash列表
+	8.用git stash apply 。。恢复刚刚合并修改的工作区
+	9.用git stash drop。。删除指定的stash
+	（或者用git stash pop还原工作区并直接删除stash）
