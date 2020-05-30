@@ -80,11 +80,3 @@
 	8.用git stash apply 。。恢复刚刚合并修改的工作区
 	9.用git stash drop。。删除指定的stash
 	（或者用git stash pop还原工作区并直接删除stash）
-26.强行删除分支
-	1.git branch -D 分支名称
-27.查看远程库信息：
-	1.git remote 
-	2.git remote -v 查看远程库的详细信息
-28.推送分支：
-	1.git push 远程库的名字  要推送的分支
-	
