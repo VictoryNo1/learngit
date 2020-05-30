@@ -47,4 +47,19 @@
 	2.git push -u origin(远程库的名字) master (将本地分支推送到远程库上，-u 参数指Git 不但会把本地的master 分支内容推送到远程新的master分支，还会把本地的master分支和远程master分支关联起来,以后的推送或者拉取时就可以简化命令)
 	3.git push origin master （把本地master分支的最新修改推送到github上）
 16.克隆远程库
-	1.git clone git@github.com:GitHub账户名/Github上远程库的名字.git （https://github.com/GitHub账户名/Github上远程库的名字.git）https速度慢，每次推送都要输入口令
+	1.git clone git@github.com:GitHub账户名/Github上远程库的名字.git （https://github.com/GitHub账户名/Github上远程库的名字.git）https速度慢，每次推送都要输入口令。
+17.创建新的的分支：
+	1.git checkout -b 分支名称  (创建新的分支，并切换到该分支，相当于（ git branch 分支名;git checkout 分支名称 ）,这两条命令。)
+	2.git switch -c 分支名(创建并切换到该分支，和上面第一条命令效果一样)
+18.查看当前分支：
+	1.git branch
+	
+19.切换分支：
+	1.git checkout 分支名
+	2.git switch 分支名 (切换到指定分支，和第一条效果一样)
+20.将指定分支合并到当前分支:
+	1.git merge 分支名
+21.删除指定分支：
+	1.git branch -d 分支名
+
+	
