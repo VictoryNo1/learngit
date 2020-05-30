@@ -61,5 +61,11 @@
 	1.git merge 分支名
 21.删除指定分支：
 	1.git branch -d 分支名
-
-	
+22.查看合并分支图：
+	git log --graph
+	git log --graph --pretty=oneline --abbrev-commit
+23.合并有冲突时先手动解决冲突，然后再提交。
+24.分支管理策略：
+	Fast forward:删除分支后，会丢掉分支信息。如果要强制禁用Fast forward模式，Git就会在merge时生成一个新的commit，这样，从分支历史上就可以看出分支信息。
+	合并分支时不用 Fast forward 模式。
+	git merge --no-ff -m "版本描述" 要合并的分支名
